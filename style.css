@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    background-color: white;
+    background: linear-gradient(to right, #48cae4, #ade8f4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #caf0f8;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #023e8a;
+}
+
+.task-container {
+    margin-top: 40px;
+}
+
+#create {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 35px;
+    width: 220px;
+    outline: none;
+    border: 2px solid #48cae4;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0077b6;
+}
+
+button {
+    border: none;
+    background-color: #48cae4;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin-right: 126px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #0077b6;
+    font-weight: 700;
+    transform: scale(1.05);
+}
+
+#to-do, #comp-task {
+    margin-top: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+li * {
+    margin-right: 10px;
+}
+
+label {
+    flex-grow: 1;
+    text-align: left;
+}
+
+ul li input[type="text"] {
+    display: none;
+}
+
+ul li.editMode input[type="text"] {
+    display: block;
+}
+
+ul li.editMode label {
+    display: none;
+}
+
+li>input[type="checkbox"] {
+    position: relative;
+    
+}
+
+#completed-task label {
+    text-decoration: line-through;
+    color: #6d6969;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px; 
+    right: 42vw;
+    color: #023e8a;
+    font-size: 17px;
+    font-weight: 600;
+}
+.footer a{
+    text-decoration: none;
+}
